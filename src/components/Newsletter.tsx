@@ -4,26 +4,26 @@ import { Calendar, TrendingUp, Zap, BookOpen } from 'lucide-react';
 
 const articles = [
   {
-    title: "How AI is Reshaping Remote Work in 2024",
-    excerpt: "Discover the latest AI tools that are transforming how distributed teams collaborate and stay productive.",
+    title: "How AI Skills Are Reshaping Job Markets in 2024",
+    excerpt: "Discover which AI skills are most in demand and how to position yourself for career advancement in the AI era.",
     date: "Jan 10, 2024",
-    category: "AI Trends",
+    category: "Career Trends",
     image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400&h=250",
     readTime: "5 min read"
   },
   {
-    title: "ChatGPT vs Claude: Which AI Assistant Wins?",
-    excerpt: "A comprehensive comparison of the top AI assistants and which one delivers the best results for professionals.",
+    title: "ChatGPT vs Claude: Which AI Assistant Wins for Job Applications?",
+    excerpt: "A comprehensive comparison of the top AI assistants and which one delivers the best results for career advancement.",
     date: "Jan 8, 2024",
     category: "Tool Reviews",
     image: "https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg?auto=compress&cs=tinysrgb&w=400&h=250",
     readTime: "7 min read"
   },
   {
-    title: "10 AI Productivity Hacks Every Professional Should Know",
-    excerpt: "Practical tips and tricks to automate your workflow and boost productivity using AI tools.",
+    title: "10 AI Career Hacks Every Professional Should Know",
+    excerpt: "Practical tips and strategies to leverage AI for career advancement and landing your dream job.",
     date: "Jan 5, 2024",
-    category: "Productivity",
+    category: "Career Tips",
     image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400&h=250",
     readTime: "4 min read"
   }
@@ -43,11 +43,11 @@ const Newsletter: React.FC = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Stay Ahead with
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              AI Pulse Weekly
+              AI Career Weekly
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get the latest AI insights, tool reviews, and productivity tips delivered to your inbox
+            Get the latest AI career insights, job market trends, and career advancement tips delivered to your inbox
           </p>
         </motion.div>
 
@@ -65,8 +65,8 @@ const Newsletter: React.FC = () => {
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">AI Pulse Weekly</h3>
-                  <p className="text-gray-600">Your weekly dose of AI insights</p>
+                  <h3 className="text-2xl font-bold text-gray-900">AI Career Weekly</h3>
+                  <p className="text-gray-600">Your weekly dose of career insights</p>
                 </div>
               </div>
 
@@ -74,24 +74,24 @@ const Newsletter: React.FC = () => {
                 <div className="flex items-start gap-3">
                   <TrendingUp className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">Latest AI Trends</div>
-                    <div className="text-sm text-gray-600">Stay updated with cutting-edge developments</div>
+                    <div className="font-semibold text-gray-900">Latest Career Trends</div>
+                    <div className="text-sm text-gray-600">Stay updated with job market developments</div>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <BookOpen className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">Tool Reviews & Tutorials</div>
-                    <div className="text-sm text-gray-600">In-depth analysis of new AI tools</div>
+                    <div className="font-semibold text-gray-900">AI Tool Reviews & Tutorials</div>
+                    <div className="text-sm text-gray-600">In-depth analysis of career-boosting AI tools</div>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <Zap className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
-                    <div className="font-semibold text-gray-900">Productivity Tips</div>
-                    <div className="text-sm text-gray-600">Actionable strategies to boost efficiency</div>
+                    <div className="font-semibold text-gray-900">Career Advancement Tips</div>
+                    <div className="text-sm text-gray-600">Actionable strategies to boost your career</div>
                   </div>
                 </div>
               </div>

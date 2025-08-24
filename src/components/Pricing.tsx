@@ -8,18 +8,18 @@ const plans = [
     price: 199,
     originalPrice: 299,
     popular: false,
-    description: "Perfect for beginners starting their AI journey",
+    description: "Perfect for beginners starting their AI career journey",
     features: [
       "Access to core AI tools training",
       "30+ video lessons",
-      "Basic automation templates",
+      "Basic career templates",
       "Community forum access",
       "Email support",
       "Certificate of completion"
     ],
     limitations: [
       "No live sessions",
-      "No 1-on-1 mentoring"
+      "No 1-on-1 career coaching"
     ]
   },
   {
@@ -27,13 +27,13 @@ const plans = [
     price: 399,
     originalPrice: 599,
     popular: true,
-    description: "Most popular choice for serious professionals",
+    description: "Most popular choice for serious career advancement",
     features: [
       "Everything in Basic",
       "Live weekly group sessions",
-      "Advanced AI workflow templates",
+      "Advanced AI career templates",
       "Priority community support",
-      "Bonus: AI Tools Masterclass",
+      "Bonus: AI Career Masterclass",
       "30-day money-back guarantee",
       "LinkedIn certificate",
       "Career advancement guide"
@@ -45,16 +45,16 @@ const plans = [
     price: 699,
     originalPrice: 999,
     popular: false,
-    description: "Ultimate package with personal mentoring",
+    description: "Ultimate package with personal career coaching",
     features: [
       "Everything in Pro",
-      "3 x 1-on-1 mentoring sessions",
-      "Custom AI strategy consultation",
+      "3 x 1-on-1 career coaching sessions",
+      "Custom AI career strategy consultation",
       "Private Slack channel access",
       "Job placement assistance",
       "Lifetime course updates",
       "Guest expert sessions",
-      "Personal AI productivity audit"
+      "Personal AI career audit"
     ],
     limitations: []
   }
@@ -74,11 +74,11 @@ const Pricing: React.FC = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Choose Your
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Learning Path
+              Career Path
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Invest in your future with our comprehensive AI mastery program
+            Invest in your future with our comprehensive AI career advancement program
           </p>
           
           {/* Limited time offer */}
@@ -199,7 +199,7 @@ const Pricing: React.FC = () => {
               Still have questions?
             </h3>
             <p className="text-gray-600 mb-6">
-              Schedule a free 15-minute consultation with our AI education specialists
+              Schedule a free 15-minute consultation with our AI career specialists
             </p>
             <button className="bg-gray-100 hover:bg-gray-200 text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
               Book Free Consultation

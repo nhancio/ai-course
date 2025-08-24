@@ -9,7 +9,7 @@ const testimonials = [
     company: "TechCorp",
     image: "https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
     rating: 5,
-    content: "This course completely transformed how I approach my daily work. I'm now automating tasks that used to take hours, and my team's productivity has skyrocketed. The instructors are world-class!"
+    content: "This course completely transformed my career trajectory. I landed my dream job as Marketing Director with a 40% salary increase. The AI skills I learned made me stand out from other candidates!"
   },
   {
     name: "Michael Rodriguez",
@@ -17,7 +17,7 @@ const testimonials = [
     company: "StartupXYZ",
     image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
     rating: 5,
-    content: "The hands-on approach and real-world projects made all the difference. I went from AI novice to implementing AI solutions at my company within 30 days. Worth every penny!"
+    content: "The hands-on approach and real-world projects made all the difference. I went from AI novice to getting hired at a top tech startup within 30 days. The career guidance was invaluable!"
   },
   {
     name: "Emily Johnson",
@@ -25,7 +25,7 @@ const testimonials = [
     company: "Global Solutions",
     image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
     rating: 5,
-    content: "The course content is incredibly comprehensive yet easy to follow. I love how they break down complex AI concepts into actionable strategies. My clients are amazed by my new capabilities!"
+    content: "The course content is incredibly comprehensive yet easy to follow. I love how they break down complex AI concepts into actionable career strategies. My clients are amazed by my new capabilities!"
   },
   {
     name: "David Kim",
@@ -41,7 +41,7 @@ const testimonials = [
     company: "Creative Agency",
     image: "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
     rating: 5,
-    content: "Amazing course! The AI tools I learned have revolutionized my content creation process. I'm producing higher quality content in half the time. Highly recommend to anyone in creative fields!"
+    content: "Amazing course! The AI tools I learned have revolutionized my content creation process and helped me land a senior role at a major creative agency. Highly recommend to anyone looking to advance their career!"
   },
   {
     name: "James Thompson",
@@ -49,7 +49,7 @@ const testimonials = [
     company: "LogiFlow",
     image: "https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
     rating: 5,
-    content: "The ROI on this course has been incredible. I've automated so many processes that my team can focus on strategic work instead of repetitive tasks. The efficiency gains are remarkable!"
+    content: "The ROI on this course has been incredible. I've automated so many processes and landed a management role with a 50% salary increase. The career advancement strategies are game-changing!"
   }
 ];
 
@@ -65,13 +65,13 @@ const Testimonials: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            What Our Students
+            Success Stories from
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Are Saying
+              Our Graduates
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join thousands of professionals who have transformed their careers with our AI program
+            Join thousands of professionals who have transformed their careers and landed dream jobs with our AI program
           </p>
         </motion.div>
 
@@ -139,8 +139,8 @@ const Testimonials: React.FC = () => {
             </div>
             <div className="w-px h-12 bg-gray-200"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900">95%</div>
-              <div className="text-sm text-gray-500">Would Recommend</div>
+              <div className="text-2xl font-bold text-gray-900">85%</div>
+              <div className="text-sm text-gray-500">Job Placement Rate</div>
             </div>
           </div>
         </motion.div>

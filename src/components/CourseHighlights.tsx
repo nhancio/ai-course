@@ -23,8 +23,8 @@ const highlights = [
   },
   {
     icon: Clock,
-    title: "Save 10+ Hours/Week",
-    description: "Automate repetitive tasks and boost your productivity dramatically",
+    title: "Land Your Dream Job",
+    description: "Get hired with AI skills that are in high demand across all industries",
     color: "from-orange-500 to-red-500"
   }
 ];
@@ -43,7 +43,7 @@ const CourseHighlights: React.FC = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Why Choose Our
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              AI Mastery Program
+              AI Career Program
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -96,8 +96,8 @@ const CourseHighlights: React.FC = () => {
               <div className="text-blue-100">Average Rating</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">95%</div>
-              <div className="text-blue-100">Completion Rate</div>
+              <div className="text-4xl font-bold mb-2">85%</div>
+              <div className="text-blue-100">Job Placement Rate</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">30+</div>

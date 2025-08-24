@@ -46,9 +46,9 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Master AI for
+            Upskill in AI to Get Your
             <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Productivity in 30 Days
+              Dream Job in 30 Days
             </span>
           </h1>
           
@@ -58,8 +58,8 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Join <span className="text-blue-400 font-semibold">10,000+</span> professionals who have unlocked 
-            <span className="text-purple-400 font-semibold"> 10x productivity</span> using AI tools
+            Join <span className="text-blue-400 font-semibold">10,000+</span> professionals who have landed their 
+            <span className="text-purple-400 font-semibold"> dream jobs</span> using AI skills
           </motion.p>
           
           <motion.div

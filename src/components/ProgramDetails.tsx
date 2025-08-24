@@ -5,23 +5,23 @@ import { CheckCircle, Play, Calendar, Users, Clock } from 'lucide-react';
 const modules = [
   {
     week: "Week 1-2",
-    title: "AI Fundamentals & Setup",
-    topics: ["Introduction to AI & Machine Learning", "Setting up AI tools ecosystem", "Understanding prompting techniques", "Basic automation workflows"]
+    title: "AI Fundamentals & Career Setup",
+    topics: ["Introduction to AI & Machine Learning", "Setting up AI tools ecosystem", "Understanding prompting techniques", "Career assessment & goal setting"]
   },
   {
     week: "Week 2-3",
-    title: "Content Creation with AI",
-    topics: ["Writing with ChatGPT & Claude", "Image generation with Midjourney", "Video creation with AI tools", "Content optimization strategies"]
+    title: "AI Skills for Job Market",
+    topics: ["Writing with ChatGPT & Claude", "Image generation with Midjourney", "Video creation with AI tools", "Portfolio building with AI"]
   },
   {
     week: "Week 3-4",
-    title: "Business Automation",
-    topics: ["Email automation with AI", "Document processing", "Data analysis & insights", "Customer service automation"]
+    title: "Job Application & Interview Prep",
+    topics: ["AI-powered resume optimization", "Interview preparation with AI", "LinkedIn profile enhancement", "Networking strategies with AI"]
   },
   {
     week: "Week 4",
-    title: "Advanced AI Applications",
-    topics: ["Custom AI workflows", "Integration strategies", "Team collaboration", "ROI measurement & scaling"]
+    title: "Career Launch & Growth",
+    topics: ["Job search automation", "Salary negotiation with AI insights", "Career advancement planning", "Continuous learning strategies"]
   }
 ];
 
@@ -37,13 +37,13 @@ const ProgramDetails: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            What You'll Learn in
+            What You'll Learn to Get Your
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              30 Days
+              Dream Job in 30 Days
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A comprehensive roadmap to AI mastery with hands-on projects and real-world applications
+            A comprehensive roadmap to AI career success with hands-on projects and job preparation strategies
           </p>
         </motion.div>
 
@@ -55,7 +55,7 @@ const ProgramDetails: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Learning Roadmap</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">Career Roadmap</h3>
             
             <div className="space-y-8">
               {modules.map((module, index) => (
@@ -127,13 +127,13 @@ const ProgramDetails: React.FC = () => {
               
               <div className="p-6">
                 <h4 className="text-xl font-bold text-white mb-2">Course Preview</h4>
-                <p className="text-gray-300">Get a sneak peek of what you'll learn in this comprehensive AI program</p>
+                <p className="text-gray-300">Get a sneak peek of what you'll learn in this comprehensive AI career program</p>
               </div>
             </div>
 
             {/* Course Details Card */}
             <div className="bg-gray-50 rounded-2xl p-8 space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Course Details</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Program Details</h3>
               
               <div className="space-y-4">
                 <div className="flex items-center gap-4">

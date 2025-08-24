@@ -14,13 +14,13 @@ const Footer: React.FC = () => {
                 <Bot className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">AI Mastery</h3>
-                <p className="text-gray-400 text-sm">Transform with AI</p>
+                <h3 className="text-xl font-bold">AI Career Mastery</h3>
+                <p className="text-gray-400 text-sm">Land Your Dream Job</p>
               </div>
             </div>
             
             <p className="text-gray-300 leading-relaxed">
-              Empowering professionals worldwide with cutting-edge AI skills and practical knowledge to accelerate their careers and boost productivity.
+              Empowering professionals worldwide with cutting-edge AI skills and career strategies to accelerate their job search and land dream positions.
             </p>
             
             <div className="flex items-center gap-4">
@@ -37,8 +37,8 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Courses</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Instructors</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Career Programs</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Career Coaches</a></li>
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Success Stories</a></li>
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Blog</a></li>
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">AI Tools</a></li>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Help Center</a></li>
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Contact Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Community Forum</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Career Community</a></li>
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Terms of Service</a></li>
               <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Refund Policy</a></li>
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
                 <Mail className="w-5 h-5 text-blue-400" />
                 <div>
                   <div className="text-gray-300">Email</div>
-                  <div className="text-sm text-gray-400">hello@aimastery.com</div>
+                  <div className="text-sm text-gray-400">hello@aicareermastery.com</div>
                 </div>
               </div>
               
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
         <div className="py-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
-              © 2024 AI Mastery. All rights reserved.
+              © 2024 AI Career Mastery. All rights reserved.
             </div>
             
             <div className="flex items-center gap-6">
