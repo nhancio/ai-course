@@ -1,0 +1,327 @@
+# NhancioLearning Platform - Setup & Run Instructions
+
+## 🚀 Quick Start
+
+This guide will help you set up and run the NhancioLearning platform, a modern AI learning platform inspired by Outskill.
+
+## 📋 Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js)
+- **PostgreSQL** (v12 or higher) - [Download here](https://www.postgresql.org/download/)
+- **Git** - [Download here](https://git-scm.com/)
+
+## 🛠️ Installation Steps
+
+### 1. Clone the Repository
+```bash
+git clone <your-repository-url>
+cd aicourse
+```
+
+### 2. Install Frontend Dependencies
+```bash
+npm install
+```
+
+### 3. Install Backend Dependencies
+```bash
+cd server
+npm install
+cd ..
+```
+
+### 4. Set Up Environment Variables
+
+Create a `.env` file in the root directory:
+```bash
+cp env.example .env
+```
+
+Edit the `.env` file with your configuration:
+```env
+# Server Configuration
+NODE_ENV=development
+PORT=3000
+FRONTEND_URL=http://localhost:5173
+
+# Database Configuration
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=nhancio_learning
+DB_USER=postgres
+DB_PASSWORD=your_password_here
+
+# JWT Configuration
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+JWT_REFRESH_SECRET=your-super-secret-refresh-key-change-this-in-production
+SESSION_SECRET=your-session-secret-key-change-this-in-production
+
+# Google OAuth Configuration (Optional)
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+GOOGLE_CALLBACK_URL=http://localhost:3000/api/auth/google/callback
+
+# Email Configuration (Optional)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+FROM_EMAIL=noreply@nhanciolearning.com
+
+# AWS S3 Configuration (Optional)
+AWS_REGION=us-east-1
+AWS_ACCESS_KEY_ID=your-aws-access-key
+AWS_SECRET_ACCESS_KEY=your-aws-secret-key
+AWS_S3_BUCKET_NAME=your-s3-bucket-name
+
+# File Upload Configuration
+MAX_FILE_SIZE=10485760
+UPLOAD_PATH=./uploads
+```
+
+### 5. Set Up PostgreSQL Database
+
+1. **Start PostgreSQL service**
+   ```bash
+   # On macOS with Homebrew
+   brew services start postgresql
+   
+   # On Ubuntu/Debian
+   sudo systemctl start postgresql
+   
+   # On Windows
+   # Start PostgreSQL service from Services
+   ```
+
+2. **Create Database**
+   ```bash
+   psql -U postgres
+   CREATE DATABASE nhancio_learning;
+   \q
+   ```
+
+3. **Verify Connection**
+   ```bash
+   psql -U postgres -d nhancio_learning -c "SELECT version();"
+   ```
+
+### 6. Create Required Directories
+```bash
+mkdir -p server/uploads
+mkdir -p server/certificates
+```
+
+## 🏃‍♂️ Running the Application
+
+### Option 1: Run Both Frontend and Backend Together
+```bash
+npm run dev
+```
+
+This will start:
+- Frontend: http://localhost:5173
+- Backend: http://localhost:3000
+
+### Option 2: Run Frontend and Backend Separately
+
+**Terminal 1 - Backend:**
+```bash
+cd server
+npm run dev
+```
+
+**Terminal 2 - Frontend:**
+```bash
+npm run dev:frontend
+```
+
+## 🌐 Access the Application
+
+- **Frontend**: http://localhost:5173
+- **Backend API**: http://localhost:3000
+- **API Health Check**: http://localhost:3000/api/health
+
+## 📚 Available Scripts
+
+### Frontend Scripts
+```bash
+npm run dev:frontend    # Start frontend development server
+npm run build          # Build for production
+npm run preview        # Preview production build
+npm run lint           # Run ESLint
+```
+
+### Backend Scripts
+```bash
+cd server
+npm run dev            # Start backend development server
+npm run build          # Build backend
+npm run start          # Start production server
+npm run test           # Run tests
+```
+
+### Full Stack Scripts
+```bash
+npm run dev            # Start both frontend and backend
+npm run build          # Build both frontend and backend
+npm run start          # Start production servers
+```
+
+## 🔧 Configuration Options
+
+### Database Configuration
+- **Host**: Database server address (default: localhost)
+- **Port**: Database port (default: 5432)
+- **Name**: Database name (default: nhancio_learning)
+- **User**: Database username (default: postgres)
+- **Password**: Database password
+
+### Email Configuration (Optional)
+To enable email functionality (password reset, verification):
+1. Set up SMTP credentials
+2. For Gmail, use App Passwords
+3. Configure FROM_EMAIL address
+
+### Google OAuth (Optional)
+To enable Google Sign-In:
+1. Create a Google Cloud Project
+2. Enable Google+ API
+3. Create OAuth 2.0 credentials
+4. Add authorized redirect URIs
+
+### AWS S3 (Optional)
+To enable cloud file storage:
+1. Create AWS account
+2. Create S3 bucket
+3. Generate access keys
+4. Configure bucket permissions
+
+## 🧪 Testing the Setup
+
+### 1. Check Backend Health
+```bash
+curl http://localhost:3000/api/health
+```
+Expected response:
+```json
+{
+  "status": "OK",
+  "timestamp": "2024-01-01T00:00:00.000Z",
+  "environment": "development"
+}
+```
+
+### 2. Check Database Connection
+The backend will automatically create tables on first run. Check the console for:
+```
+✅ Database connection established successfully.
+✅ Database models synchronized.
+```
+
+### 3. Test Frontend
+Open http://localhost:5173 and verify:
+- Homepage loads with blue gradient design
+- Navigation works
+- Responsive design on mobile/desktop
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**1. Database Connection Error**
+```
+Error: connect ECONNREFUSED 127.0.0.1:5432
+```
+**Solution**: 
+- Ensure PostgreSQL is running
+- Check database credentials in .env
+- Verify database exists
+
+**2. Port Already in Use**
+```
+Error: listen EADDRINUSE :::3000
+```
+**Solution**:
+- Change PORT in .env file
+- Kill process using the port: `lsof -ti:3000 | xargs kill -9`
+
+**3. Module Not Found Errors**
+```
+Error: Cannot find module 'react-query'
+```
+**Solution**:
+- Run `npm install` in both root and server directories
+- Clear node_modules and reinstall: `rm -rf node_modules && npm install`
+
+**4. CORS Errors**
+```
+Access to fetch at 'http://localhost:3000/api/auth/login' from origin 'http://localhost:5173' has been blocked by CORS policy
+```
+**Solution**:
+- Ensure backend is running on port 3000
+- Check FRONTEND_URL in .env matches your frontend URL
+
+### Development Tips
+
+1. **Hot Reload**: Both frontend and backend support hot reloading
+2. **Logs**: Check terminal output for detailed error messages
+3. **Database**: Use pgAdmin or similar tool to inspect database
+4. **Network**: Use browser dev tools to inspect API calls
+
+## 📦 Production Deployment
+
+### Frontend Build
+```bash
+npm run build
+```
+The built files will be in the `dist` directory.
+
+### Backend Build
+```bash
+cd server
+npm run build
+```
+The built files will be in the `server/dist` directory.
+
+### Environment Variables for Production
+- Set `NODE_ENV=production`
+- Use strong, unique JWT secrets
+- Configure production database
+- Set up proper CORS origins
+- Configure SSL certificates
+
+## 🔐 Security Considerations
+
+1. **Environment Variables**: Never commit .env files
+2. **JWT Secrets**: Use strong, unique secrets in production
+3. **Database**: Use strong passwords and limit access
+4. **CORS**: Configure allowed origins properly
+5. **Rate Limiting**: Already configured in the backend
+6. **Input Validation**: All inputs are validated on both frontend and backend
+
+## 📞 Support
+
+If you encounter issues:
+1. Check the troubleshooting section above
+2. Verify all prerequisites are installed
+3. Check console logs for detailed error messages
+4. Ensure all environment variables are set correctly
+
+## 🎯 Next Steps
+
+After successful setup:
+1. Create an admin user in the database
+2. Add sample programs and community members
+3. Test certificate generation
+4. Configure email and file storage (optional)
+5. Set up monitoring and logging (production)
+
+---
+
+**Happy Learning! 🚀**
+
+The NhancioLearning platform is now ready to empower future leaders in AI & Technology.
