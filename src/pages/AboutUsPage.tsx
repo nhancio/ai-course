@@ -25,11 +25,66 @@ const AboutUsPage: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Mission & Vision */}
+        {/* Our Story */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-16"
+        >
+          <div className="bg-gradient-to-r from-blue-600 to-blue-800 p-8 rounded-lg">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-white mb-4">
+                Our Story: From IIT Kanpur to Global Impact
+              </h2>
+              <p className="text-blue-100 text-lg max-w-4xl mx-auto leading-relaxed">
+                Born from the hallowed halls of IIT Kanpur, our journey began with a simple yet powerful vision: 
+                to upskill India and give our professionals the confidence to compete on a global scale.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white/10 p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <GraduationCap className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-white font-semibold text-lg mb-2">The IIT Foundation</h3>
+                <p className="text-blue-100 text-sm">
+                  Founded by IIT Kanpur alumni who experienced firsthand the gap between academic excellence 
+                  and industry readiness, we understand what it takes to succeed globally.
+                </p>
+              </div>
+
+              <div className="bg-white/10 p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-white font-semibold text-lg mb-2">Upskilling India</h3>
+                <p className="text-blue-100 text-sm">
+                  Our mission is to democratize world-class AI education, making it accessible to every 
+                  Indian professional who dreams of making a global impact.
+                </p>
+              </div>
+
+              <div className="bg-white/10 p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Globe className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-white font-semibold text-lg mb-2">Global Confidence</h3>
+                <p className="text-blue-100 text-sm">
+                  We don't just teach AI; we build confidence. Our graduates work with the same 
+                  competence and assurance as professionals from the world's top institutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Mission & Vision */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
         >
           <div className="bg-slate-800 p-8 rounded-lg border border-blue-500/20">
@@ -38,9 +93,9 @@ const AboutUsPage: React.FC = () => {
             </div>
             <h2 className="text-2xl font-bold text-white mb-4">Our Mission</h2>
             <p className="text-gray-300 leading-relaxed">
-              To democratize AI education by providing accessible, high-quality learning experiences 
-              that bridge the gap between academic knowledge and industry requirements. We believe 
-              that everyone deserves access to world-class AI education, regardless of their background.
+              To upskill India's workforce with cutting-edge AI education, bridging the gap between 
+              academic excellence and industry requirements. We empower professionals to compete 
+              confidently on the global stage, armed with practical skills and real-world experience.
             </p>
           </div>
 
@@ -50,9 +105,9 @@ const AboutUsPage: React.FC = () => {
             </div>
             <h2 className="text-2xl font-bold text-white mb-4">Our Vision</h2>
             <p className="text-gray-300 leading-relaxed">
-              To become the leading platform for AI education in India and globally, creating a 
-              community of skilled professionals who drive innovation and technological advancement 
-              across industries.
+              To become India's most trusted platform for AI education, creating a generation of 
+              professionals who not only excel in their careers but also drive innovation and 
+              technological advancement on a global scale.
             </p>
           </div>
         </motion.div>
@@ -61,17 +116,17 @@ const AboutUsPage: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="mb-16"
         >
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 p-8 rounded-lg">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-white mb-4">
-                Founded by IIT Kanpur Alumni
+                The IIT Kanpur Advantage
               </h2>
               <p className="text-blue-100 text-lg max-w-3xl mx-auto">
-                Our journey began with a vision to transform AI education, backed by the rigorous 
-                academic foundation and industry experience of IIT Kanpur graduates.
+                As IIT Kanpur alumni, we bring the same rigor, excellence, and global perspective 
+                that made us successful in the international tech industry back to India.
               </p>
             </div>
 
@@ -80,9 +135,10 @@ const AboutUsPage: React.FC = () => {
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-white font-semibold text-lg mb-2">Academic Excellence</h3>
+                <h3 className="text-white font-semibold text-lg mb-2">Global Perspective</h3>
                 <p className="text-blue-100 text-sm">
-                  Rooted in IIT Kanpur's world-class education standards and research methodology
+                  Having worked with top global companies, we understand what the world expects 
+                  from Indian professionals
                 </p>
               </div>
 
@@ -90,9 +146,10 @@ const AboutUsPage: React.FC = () => {
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-white font-semibold text-lg mb-2">Industry Experience</h3>
+                <h3 className="text-white font-semibold text-lg mb-2">Startup Mentality</h3>
                 <p className="text-blue-100 text-sm">
-                  Decades of combined experience in leading tech companies and startups
+                  We're not just educators; we're entrepreneurs who understand the challenges 
+                  of building successful careers
                 </p>
               </div>
 
@@ -100,9 +157,10 @@ const AboutUsPage: React.FC = () => {
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-white font-semibold text-lg mb-2">Innovation Focus</h3>
+                <h3 className="text-white font-semibold text-lg mb-2">Practical Approach</h3>
                 <p className="text-blue-100 text-sm">
-                  Cutting-edge curriculum designed for the future of AI and technology
+                  We focus on real-world applications, not just theory, preparing you for 
+                  immediate industry impact
                 </p>
               </div>
             </div>
@@ -268,14 +326,14 @@ const AboutUsPage: React.FC = () => {
         >
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-white mb-4">
-              Ready to Learn from the Best?
+              Ready to Compete on the Global Stage?
             </h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Join thousands of students who have transformed their careers with our 
-              IIT Kanpur alumni-led AI education programs.
+              Join the movement to upskill India. Learn from IIT Kanpur alumni who've succeeded 
+              globally and are now empowering the next generation of Indian professionals.
             </p>
             <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 inline-flex items-center space-x-2">
-              <span>Start Learning Today</span>
+              <span>Start Your Global Journey</span>
               <GraduationCap className="w-5 h-5" />
             </button>
           </div>

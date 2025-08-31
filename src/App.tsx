@@ -24,6 +24,7 @@ import PricingPolicyPage from './pages/PricingPolicyPage';
 import ShippingPolicyPage from './pages/ShippingPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import AboutUsPage from './pages/AboutUsPage';
+import ContactUsPage from './pages/ContactUsPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 // Create a client
@@ -71,6 +72,8 @@ function App() {
                             <Route path="/shipping" element={<ShippingPolicyPage />} />
                             <Route path="/terms" element={<TermsOfServicePage />} />
                             <Route path="/about" element={<AboutUsPage />} />
+                            <Route path="/aboutus" element={<AboutUsPage />} />
+                            <Route path="/contactus" element={<ContactUsPage />} />
                             <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </main>
