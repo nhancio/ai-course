@@ -20,7 +20,10 @@ import DashboardPage from './pages/DashboardPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import RefundPolicyPage from './pages/RefundPolicyPage';
+import PricingPolicyPage from './pages/PricingPolicyPage';
+import ShippingPolicyPage from './pages/ShippingPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
+import AboutUsPage from './pages/AboutUsPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 // Create a client
@@ -64,7 +67,10 @@ function App() {
                 {/* 404 Page */}
                                             <Route path="/privacy" element={<PrivacyPolicyPage />} />
                             <Route path="/refund" element={<RefundPolicyPage />} />
+                            <Route path="/pricing" element={<PricingPolicyPage />} />
+                            <Route path="/shipping" element={<ShippingPolicyPage />} />
                             <Route path="/terms" element={<TermsOfServicePage />} />
+                            <Route path="/about" element={<AboutUsPage />} />
                             <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </main>
