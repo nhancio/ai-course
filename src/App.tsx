@@ -25,7 +25,7 @@ import ShippingPolicyPage from './pages/ShippingPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactUsPage from './pages/ContactUsPage';
-import NotFoundPage from './pages/NotFoundPage';
+
 
 // Create a client
 const queryClient = new QueryClient({
@@ -65,16 +65,14 @@ function App() {
                   </ProtectedRoute>
                 } />
                 
-                {/* 404 Page */}
-                                            <Route path="/privacy" element={<PrivacyPolicyPage />} />
-                            <Route path="/refund" element={<RefundPolicyPage />} />
-                            <Route path="/pricing" element={<PricingPolicyPage />} />
-                            <Route path="/shipping" element={<ShippingPolicyPage />} />
-                            <Route path="/terms" element={<TermsOfServicePage />} />
-                            <Route path="/about" element={<AboutUsPage />} />
-                            <Route path="/aboutus" element={<AboutUsPage />} />
-                            <Route path="/contactus" element={<ContactUsPage />} />
-                            <Route path="*" element={<NotFoundPage />} />
+                <Route path="/privacy" element={<PrivacyPolicyPage />} />
+                <Route path="/refund" element={<RefundPolicyPage />} />
+                <Route path="/pricing" element={<PricingPolicyPage />} />
+                <Route path="/shipping" element={<ShippingPolicyPage />} />
+                <Route path="/terms" element={<TermsOfServicePage />} />
+                <Route path="/about" element={<AboutUsPage />} />
+                <Route path="/aboutus" element={<AboutUsPage />} />
+                <Route path="/contactus" element={<ContactUsPage />} />
               </Routes>
             </main>
             <Footer />

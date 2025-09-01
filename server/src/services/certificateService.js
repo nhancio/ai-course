@@ -205,7 +205,7 @@ export class CertificateService {
     doc.fontSize(12)
        .font('Helvetica-Bold')
        .fillColor('#1e293b')
-       .text('Dr. Sarah Johnson', doc.page.width / 2 - 150, footerY + 10, {
+       .text('Chaitanya', doc.page.width / 2 - 150, footerY + 10, {
          align: 'center'
        });
 

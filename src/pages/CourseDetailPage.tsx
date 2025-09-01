@@ -12,7 +12,7 @@ const CourseDetailPage: React.FC = () => {
     rating: 4.9,
     students: 10000,
     level: 'All Levels',
-    instructor: 'Dr. Sarah Johnson',
+    instructor: 'Chaitanya',
     instructorTitle: 'Senior AI Engineer at Google',
     features: [
       'Hands-on Projects with Real Data',

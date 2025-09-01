@@ -4,7 +4,7 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Sarah Chen",
+    name: "Chaitanya",
     role: "Marketing Director",
     company: "TechCorp",
     image: "https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
@@ -12,7 +12,7 @@ const testimonials = [
     content: "This course completely transformed my career trajectory. I landed my dream job as Marketing Director with a 40% salary increase. The AI skills I learned made me stand out from other candidates!"
   },
   {
-    name: "Michael Rodriguez",
+    name: "Nikhitha",
     role: "Software Engineer",
     company: "StartupXYZ",
     image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",
@@ -20,7 +20,7 @@ const testimonials = [
     content: "The hands-on approach and real-world projects made all the difference. I went from AI novice to getting hired at a top tech startup within 30 days. The career guidance was invaluable!"
   },
   {
-    name: "Emily Johnson",
+    name: "Lavanya",
     role: "Business Consultant",
     company: "Global Solutions",
     image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=150&h=150",

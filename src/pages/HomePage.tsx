@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: 'Chaitanya',
       role: 'Product Manager',
       company: 'TechCorp',
       content: 'The AI upskill Workshop completely transformed how I approach product development. The hands-on projects were invaluable.',
@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
     },
     {
       id: 2,
-      name: 'Michael Chen',
+      name: 'Nikhitha',
       role: 'Startup Founder',
       company: 'InnovateAI',
       content: 'AI upskill Workshop gave me the strategic insights I needed to scale my business. The peer network is incredible.',
@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
     },
     {
       id: 3,
-      name: 'Emily Rodriguez',
+      name: 'Lavanya',
       role: 'Data Scientist',
       company: 'DataFlow',
       content: 'AI upskill Workshop helped me automate 80% of my daily tasks. The productivity gains are remarkable.',
@@ -111,57 +111,14 @@ const HomePage: React.FC = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Certificate Preview */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-2 hover:rotate-0 transition-transform duration-300">
-                {/* Certificate Header */}
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
-                    <div className="w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <div>
-                    <div className="text-lg font-bold text-gray-800">NhancioLearning</div>
-                    <div className="text-sm text-gray-600">IITians-based Startup</div>
-                  </div>
-                </div>
-
-                {/* Certificate Content */}
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-blue-600 mb-4">Certificate of Completion</h3>
-                  <p className="text-gray-600 mb-4">proudly presented to</p>
-                  <div className="text-xl font-bold text-gray-800 mb-2 border-b-2 border-blue-500 pb-1">
-                    Your Name
-                  </div>
-                  <p className="text-gray-600 mb-6">
-                    for successfully completing the program
-                  </p>
-                  
-                  {/* Signatures */}
-                  <div className="flex justify-between items-end mt-8">
-                    <div className="text-center">
-                      <div className="w-24 h-12 bg-gray-300 rounded mb-2"></div>
-                      <div className="text-sm font-semibold text-gray-800">Mentor Sign</div>
-                      <div className="text-xs text-gray-600">Senior AI Engineer</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-24 h-12 bg-gray-300 rounded mb-2"></div>
-                      <div className="text-sm font-semibold text-gray-800">Founder Sign</div>
-                      <div className="text-xs text-gray-600">Founder, NhancioLearning</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-blue-100 rounded-full opacity-50"></div>
-                <div className="absolute bottom-4 left-4 w-6 h-6 bg-blue-100 rounded-full opacity-50"></div>
-              </div>
-            </motion.div>
+                                    {/* Certificate Preview */}
+                        <div className="relative">
+                          <img 
+                            src="/certificates/certificate.jpg" 
+                            alt="NhancioLearning Certificate Sample"
+                            className="w-full h-auto rounded-2xl shadow-2xl border-4 border-white"
+                          />
+                        </div>
 
             {/* Certificate Benefits */}
             <motion.div
