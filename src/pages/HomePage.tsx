@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, Star, Users, Award, Zap, CheckCircle } from 'lucide-react';
+import { ArrowRight, Play, Star, Users, Award, Zap, CheckCircle, TrendingUp } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   const featuredCourse = {
@@ -9,7 +9,8 @@ const HomePage: React.FC = () => {
     title: 'AI upskill Workshop',
     description: 'Master the fundamentals of AI and build real-world applications that will transform your career',
     duration: '7 Days',
-          price: '₹499',
+          price: '₹0',
+    originalPrice: '₹499',
     features: ['Hands-on Projects', 'Expert Mentorship', 'Certificate', 'Lifetime Access'],
     image: '/api/placeholder/400/250'
   };
@@ -85,12 +86,145 @@ const HomePage: React.FC = () => {
               to="/courses"
               className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-lg hover:shadow-blue-500/25 flex items-center space-x-2"
             >
-              <span>Explore Courses</span>
+              <span>Limited Slots Available</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
 
 
+        </div>
+      </section>
+
+      {/* How AI Transforms Careers */}
+      <section className="py-20 bg-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <TrendingUp className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              How AI Transforms Your Career Future
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              AI isn't just changing industries—it's revolutionizing how we work, learn, and advance in our careers. 
+              Here's how mastering AI can reshape your professional journey.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-blue-600 to-blue-800 p-6 rounded-lg"
+            >
+              <div className="text-3xl mb-4">🚀</div>
+              <h3 className="text-white font-semibold text-lg mb-3">Accelerated Career Growth</h3>
+              <p className="text-blue-100 text-sm">
+                AI skills can accelerate your career progression by 3-5 years. Professionals with AI expertise 
+                are being promoted faster and earning 40-60% higher salaries than their peers.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-green-600 to-green-800 p-6 rounded-lg"
+            >
+              <div className="text-3xl mb-4">🌍</div>
+              <h3 className="text-white font-semibold text-lg mb-3">Global Opportunities</h3>
+              <p className="text-green-100 text-sm">
+                AI skills are universally in demand. Whether you want to work remotely for international companies 
+                or relocate to tech hubs worldwide, AI expertise opens doors globally.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-purple-600 to-purple-800 p-6 rounded-lg"
+            >
+              <div className="text-3xl mb-4">💡</div>
+              <h3 className="text-white font-semibold text-lg mb-3">Future-Proof Your Career</h3>
+              <p className="text-purple-100 text-sm">
+                While automation may replace some jobs, it creates new opportunities for those who understand AI. 
+                You become the person who works with AI, not against it.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-orange-600 to-orange-800 p-6 rounded-lg"
+            >
+              <div className="text-3xl mb-4">🎯</div>
+              <h3 className="text-white font-semibold text-lg mb-3">Multiple Career Paths</h3>
+              <p className="text-orange-100 text-sm">
+                AI skills apply across industries—from healthcare and finance to marketing and education. 
+                You can pivot between sectors while maintaining your competitive edge.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-red-600 to-red-800 p-6 rounded-lg"
+            >
+              <div className="text-3xl mb-4">⚡</div>
+              <h3 className="text-white font-semibold text-lg mb-3">Enhanced Productivity</h3>
+              <p className="text-red-100 text-sm">
+                AI tools can make you 10x more productive, allowing you to focus on high-value strategic work 
+                while AI handles routine tasks. This makes you indispensable to any organization.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-indigo-600 to-indigo-800 p-6 rounded-lg"
+            >
+              <div className="text-3xl mb-4">🏆</div>
+              <h3 className="text-white font-semibold text-lg mb-3">Leadership Opportunities</h3>
+              <p className="text-indigo-100 text-sm">
+                As AI becomes central to business strategy, those with AI knowledge naturally rise to leadership 
+                positions, driving digital transformation and innovation.
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-8 rounded-lg border border-blue-500/20 max-w-4xl mx-auto">
+              <h3 className="text-white font-semibold text-xl mb-4">The Choice is Yours</h3>
+              <p className="text-gray-300 leading-relaxed">
+                The future belongs to those who embrace AI. While others fear automation, you can be the one 
+                who leverages it to build an extraordinary career. Every day you wait is a day your competitors 
+                get ahead. Start your AI transformation journey today and secure your place in the future of work.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -176,65 +310,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Who is NhancioLearning for Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Who is NhancioLearning for?
-            </h2>
-            <p className="text-xl text-gray-400">AI FOR ALL STAGES</p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="text-center p-8 bg-slate-800 rounded-lg border border-blue-500/20"
-            >
-              <div className="text-2xl font-bold text-blue-400 mb-4">1-3 Yrs of Experience</div>
-              <p className="text-gray-300">
-                Stand out early by leveraging AI as your competitive edge.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-center p-8 bg-slate-800 rounded-lg border border-blue-500/20"
-            >
-              <div className="text-2xl font-bold text-blue-400 mb-4">3-9 Yrs of Experience</div>
-              <p className="text-gray-300">
-                Lead AI-driven projects and deliver impactful solutions.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-center p-8 bg-slate-800 rounded-lg border border-blue-500/20"
-            >
-              <div className="text-2xl font-bold text-blue-400 mb-4">10+ Yrs of Experience</div>
-              <p className="text-gray-300">
-                Manage AI teams and drive organizational transformation.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Course */}
       <section className="py-20 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -273,19 +348,13 @@ const HomePage: React.FC = () => {
               <div className="p-8">
                 <p className="text-gray-300 mb-6 text-lg">{featuredCourse.description}</p>
                 
-                {/* Course Stats */}
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center space-x-4 text-sm text-gray-400">
-                    <div className="flex items-center space-x-1">
-                      <Star className="w-4 h-4" />
-                      <span>4.9 (2,500+ reviews)</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Users className="w-4 h-4" />
-                      <span>10,000+ students</span>
-                    </div>
+                {/* Course Price */}
+                <div className="flex items-center justify-end mb-6">
+                  <div className="text-right">
+                    <div className="text-sm text-gray-400 line-through mb-1">{featuredCourse.originalPrice}</div>
+                    <div className="text-2xl font-bold text-white">{featuredCourse.price}</div>
+                    <div className="text-xs text-green-400">Limited Slots Available</div>
                   </div>
-                  <div className="text-2xl font-bold text-white">{featuredCourse.price}</div>
                 </div>
 
                 {/* Features */}

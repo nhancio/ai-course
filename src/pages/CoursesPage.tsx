@@ -8,10 +8,8 @@ const CoursesPage: React.FC = () => {
     title: 'AI upskill Workshop',
     description: 'Master the fundamentals of AI and build real-world applications that will transform your career. This comprehensive workshop covers everything from basic concepts to advanced implementations.',
     duration: '7 Days',
-    price: '₹499',
-    rating: 4.9,
-    students: 10000,
-    level: 'All Levels',
+    price: '₹0',
+    originalPrice: '₹499',
     features: ['Hands-on Projects', 'Expert Mentorship', 'Certificate', 'Lifetime Access'],
     image: '/api/placeholder/400/250',
     category: 'AI & ML'
@@ -57,25 +55,6 @@ const CoursesPage: React.FC = () => {
 
             {/* Course Content */}
             <div className="p-8">
-              {/* Course Stats */}
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-400 mb-2">{course.rating}</div>
-                  <div className="text-gray-400 text-sm">Rating</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-400 mb-2">{course.students.toLocaleString()}+</div>
-                  <div className="text-gray-400 text-sm">Students</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-400 mb-2">{course.duration}</div>
-                  <div className="text-gray-400 text-sm">Duration</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-400 mb-2">{course.level}</div>
-                  <div className="text-gray-400 text-sm">Level</div>
-                </div>
-              </div>
 
               {/* Features */}
               <div className="mb-8">
@@ -93,8 +72,9 @@ const CoursesPage: React.FC = () => {
               {/* Price and CTA */}
               <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 bg-slate-700 rounded-lg">
                 <div className="text-center md:text-left">
+                  <div className="text-sm text-gray-400 line-through mb-1">{course.originalPrice}</div>
                   <div className="text-4xl font-bold text-white mb-2">{course.price}</div>
-                  <div className="text-gray-400">One-time payment</div>
+                  <div className="text-green-400 text-sm font-medium">Limited Slots Available</div>
                 </div>
                 <div className="w-full md:w-auto">
                   <button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-200 text-lg flex items-center justify-center space-x-2">
